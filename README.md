@@ -1,2 +1,2 @@
 # Computational-physics
-The purpose of this repository is to store all the science programming projects done at school. These include scientific computing with Fortran and modelling physical phenomena with Python.
+A simple Python package for crowd behaviour modelisation at peak times in different situations, such as evacuating a room, moving through a crowded corridor, or managing demonstrations.
