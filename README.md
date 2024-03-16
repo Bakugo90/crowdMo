@@ -1,13 +1,24 @@
-# Crowd behavior modelisation
-A simple Python package (based on fluid mechanics) to model the behaviour of crowds at peak times in different situations, such as evacuating a room, moving through a crowded corridor, or managing demonstrations.
+# Crowd Behavior Modeling
 
-This model takes several variables as parameters, such as the `Obstacle avoidance force (obf)size of a closed area`, the ``number of people in the area``, etc., and then generates a simulation that represents the behaviour of the crowd at the exit in an emergency situation or during rush hour. It also generates an ``average evacuation time`` for each individual and the ``average crowd density around obstacles.``
-In real life, people make individual decisions based on more complex social and psychological factors. That's why this model focuses only on logical and precise parameters like `Directional force (fdir)` and `Obstacle avoidance force (obf)`, rather than unpredictable factors such as fear or something else.
+Welcome to my Python package! I've developed a very simple, yet powerful, tool based on fluid mechanics principles to simulate crowd behavior in various scenarios. Whether it's evacuating a room during an emergency, navigating a crowded corridor, or managing large-scale demonstrations, our model can help you understand and predict crowd dynamics.
 
-In the following overview, the large red dots are obstacles and the small yellow dots are people.
+## How It Works
+
+Our model uses several parameters to generate a realistic simulation of crowd behavior. These parameters include:
+
+- `Size of a closed area`: The total area that the crowd occupies.
+- `Number of people in the area`: The total number of individuals in the crowd.
+
+Based on these parameters, the model calculates the ``Steering Force (fdir)`` and ``Obstacle Avoidance Force (fobs)`` and then generates a simulation that represents crowd behaviour at peak times or in emergency situations.
+
+At the end of the simulation, we can also obtain the ``average evacuation time`` for each individual and the ``average crowd density around obstacles``. These results can be used in civil engineering or architecture to design more effective evacuation plans for public buildings, stadiums or shopping centres.
+
+Please note that this model focuses on logical and precise parameters, rather than unpredictable factors such as fear or panic. This is because in real life, people make decisions based on complex social and psychological factors that are difficult to quantify.
 
 
-## Simple overview
+## Visualization
+
+To help you better understand the output of our model,I've included a simple visualization. In the image below, large red dots represent obstacles, while small yellow dots represent individuals in the crowd.
 
 ![preview](/screenshot.png)
 
@@ -27,4 +38,6 @@ python3 -m pip install -e .
 ```
 python test_simulation.py
 ```
+
+
 
